@@ -68,6 +68,13 @@ def llm_response():
                 "content": example_output
             }
         )
+    
+    messages.append(
+        {
+            "role": "user",
+            "content": user_query
+        }
+    )
 
     result = client.chat.completions.create(
         model = os.getenv("GROQ_LLM_MODEL"),

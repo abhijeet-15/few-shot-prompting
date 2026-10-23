@@ -14,6 +14,7 @@ JSON_SCHEMA =
 
 - Emit a single thinking step/plan at a time until you have the final answer ready.
 - Once you have finished your thinking and have the final answer, emit the FINAL_OUTPUT step with the final answer to the user.
+- CRITICAL: The `content` field for "FINAL_OUTPUT" MUST contain ONLY the final numeric value as a raw string (e.g., "360", "15.5"). Do NOT include text, currency symbols like $, units, or complete sentences.
 
 Example:
 Roger has 5 tennis balls. He purchases 2 cans of tennis balls, each can  has 3 balls. How many tennis ball does Roger has now?
